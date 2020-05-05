@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/colinac/shirley/issues"
   },
-  "homepage": "https://github.com/colinac/shirley#readme"
+  "homepage": "https://github.com/colinac/shirley#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
