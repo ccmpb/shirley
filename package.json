@@ -1,0 +1,23 @@
+{
+  "name": "shirley",
+  "version": "1.0.0",
+  "description": "Super groovy name generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinac/shirley.git"
+  },
+  "keywords": [
+    "name",
+    "generator"
+  ],
+  "author": "Colin Campbell <colin@elusivelabs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinac/shirley/issues"
+  },
+  "homepage": "https://github.com/colinac/shirley#readme"
+}
