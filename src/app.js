@@ -5,15 +5,8 @@ const port = 3000;
 
 const cmd = "bin/nameit";
 
-const randword = (success, error) => {
-  exec("shuf -n1 data/words", (err, stdout, stderr) => {
-    if (err) {
-      error(er);
-    }
-  });
-};
-
 app.get("/", (req, res) => {
+  res.setHeader("Content-Type", "text/plain");
   exec(cmd, (err, stdout, stderr) => {
     if (err) {
       return res.send(err);
