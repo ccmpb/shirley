@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
     if (stderr) {
       return res.send(stderr);
     }
-    console.log(stdout);
 
     res.send(stdout.toLowerCase());
   });
