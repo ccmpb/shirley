@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
+    "watch": "nodemon src/app.js",
     "test": "export NODE_ENV=test && mocha",
     "test-watch": "nodemon --exec npm test"
   },

@@ -1,15 +1,11 @@
 const request = require("request");
 const expect = require("chai").expect;
+const { app } = require("../src/app.js");
 
 describe("Main applicaiton", () => {
   describe("/", () => {
-    const url = "http://localhost:3000";
-
-    it("returns 200", (done) => {
-      request(url, (error, response, body) => {
-        expect(response.statusCode).to.equal(200);
-        done();
-      });
+    it("should get a name", (done) => {
+      request(app).get("/").expect(200).end(done);
     });
   });
 });
